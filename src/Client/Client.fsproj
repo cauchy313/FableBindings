@@ -7,6 +7,8 @@
     <ItemGroup>
         <None Include="index.html" />
         <None Include="paket.references" />
+        <Compile Include = "DownloadJS/DownloadJS.fs" />
+        <Compile Include = "DownloadJS/Tests/Tests.fs" />
         <Compile Include="Index.fs" />
         <Compile Include="App.fs" />
     </ItemGroup>

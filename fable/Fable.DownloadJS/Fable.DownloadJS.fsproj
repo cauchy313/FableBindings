@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>    
+    <Version>0.0.1</Version>
+    <Authors>Kevin Scully</Authors>
+    <Company>Widgets Inc.</Company>
+    <PackageId>Fable.DownloadJS</PackageId>
+    <PackageProjectUrl>https://github.com/cauchy313/FableBindings</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/cauchy313/FableBindings</RepositoryUrl>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NpmDependencies>
+      <NpmPackage Name="downloadjs" Version="gte 1.4.7 lt 2.0.0" ResolutionStrategy="Max" />
+    </NpmDependencies>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="paket.references" />
+    <Compile Include="Fable.DownloadJS.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="*.fsproj; *.fs; *.js;" Exclude="**\*.fs.js" PackagePath="fable\" />
+  </ItemGroup>
+  <Import Project="..\..\.paket\Paket.Restore.targets" />
+</Project>
