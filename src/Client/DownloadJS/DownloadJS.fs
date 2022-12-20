@@ -1,10 +1,8 @@
 module Fable.DownloadJS
 
-
 open Browser.Types
 open Fable.Core
 open Fable.Core.JS
-
 
 
 [<Erase; RequireQualifiedAccess>]

@@ -5,12 +5,61 @@
         <DefineConstants>FABLE_COMPILER</DefineConstants>
     </PropertyGroup>
     <ItemGroup>
-        <None Include="index.html" />
-        <None Include="paket.references" />
+        <None Include = "index.html" />
+        <None Include = "paket.references" />
+        <Compile Include = "Extensions.fs" />
+
+        <Compile Include = "RoughViz/BarChart.fs" />
+        <Compile Include = "RoughViz/PieChart.fs" />
+        <Compile Include = "RoughViz/RoughViz.fs" />
+
         <Compile Include = "DownloadJS/DownloadJS.fs" />
         <Compile Include = "DownloadJS/Tests/Tests.fs" />
-        <Compile Include="Index.fs" />
-        <Compile Include="App.fs" />
+
+        <Compile Include = "VictoryCharts/Types.fs" />
+        <Compile Include = "VictoryCharts/Interop.fs" />
+        <Compile Include = "VictoryCharts/Style.fs" />
+        <Compile Include = "VictoryCharts/CommonProps.fs" />
+        <Compile Include = "VictoryCharts/Padding.fs" />
+        <Compile Include = "VictoryCharts/Point.fs" />
+        <Compile Include = "VictoryCharts/Label.fs" />
+        <Compile Include = "VictoryCharts/Flyout.fs" />
+        <Compile Include = "VictoryCharts/Tooltip.fs" />
+        <Compile Include = "VictoryCharts/Axis.fs" />
+        <Compile Include = "VictoryCharts/PolarAxis.fs" />
+        <Compile Include = "VictoryCharts/Legend.fs" />
+        <Compile Include = "VictoryCharts/ChartContainer.fs" /> 
+        <Compile Include = "VictoryCharts/ClipContainer.fs" />
+        <Compile Include = "VictoryCharts/Bar.fs" />
+        <Compile Include = "VictoryCharts/AreaChart.fs" />
+        <Compile Include = "VictoryCharts/LineChart.fs" />
+        <Compile Include = "VictoryCharts/BarChart.fs" />
+        <Compile Include = "VictoryCharts/PieChart.fs" />
+        <Compile Include = "VictoryCharts/ScatterChart.fs" />  
+        <Compile Include = "VictoryCharts/Stack.fs" />      
+        <Compile Include = "VictoryCharts/VictoryCharts.fs" />
+
+        <Compile Include = "PdfLib/PdfLib.fs" />
+
+        <Compile Include = "Pages/DownloadJS.fs" />
+
+        <Compile Include = "Pages/VictoryCharts/VictoryLabel.fs" />
+        <Compile Include = "Pages/VictoryCharts/VictoryAxis.fs" />
+        <Compile Include = "Pages/VictoryCharts/VictoryLegend.fs" />
+        <Compile Include = "Pages/VictoryCharts/VictoryAreaChart.fs" />
+        <Compile Include = "Pages/VictoryCharts/VictoryPieChart.fs" />
+        <Compile Include = "Pages/VictoryCharts/VictoryBarChart.fs" />
+        <Compile Include = "Pages/VictoryCharts/VictoryLine.fs" />
+        <Compile Include = "Pages/VictoryCharts/VictoryScatterChart.fs" />
+        <Compile Include = "Pages/VictoryCharts/VictoryTooltip.fs" />
+        <Compile Include = "Pages/VictoryCharts/VictoryStack.fs" />        
+        <Compile Include = "Pages/VictoryCharts/VictoryCharts.fs" />
+        
+
+        <Compile Include = "Pages/PdfLib.fs" />
+        
+        <Compile Include = "Index.fs" />
+        <Compile Include = "App.fs" />
     </ItemGroup>
     <ItemGroup>
         <ProjectReference Include="..\Shared\Shared.fsproj" />

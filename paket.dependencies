@@ -13,9 +13,12 @@ nuget Fable.Elmish.Debugger
 nuget Fable.Elmish.HMR
 nuget Fable.Mocha
 nuget Fable.React
+nuget Fable.Fetch
+nuget Fable.Promise
 nuget Fable.Remoting.Client
 nuget Feliz
 nuget Feliz.Bulma
+nuget Feliz.UseElmish
 nuget Fulma
 
 nuget Fake.Core.Target

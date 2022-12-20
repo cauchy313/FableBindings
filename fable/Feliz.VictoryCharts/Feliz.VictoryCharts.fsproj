@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <Version>0.0.1</Version>
+    <Authors>Kevin Scully</Authors>
+    <Company>Widgets Inc.</Company>
+    <PackageId>Feliz.VictoryCharts</PackageId>
+    <PackageProjectUrl>https://github.com/cauchy313/FableBindings</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/cauchy313/FableBindings</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+        <None Include="paket.references" />
+        <Compile Include = "VictoryCharts/Types.fs" />
+        <Compile Include = "VictoryCharts/Interop.fs" />
+        <Compile Include = "VictoryCharts/Style.fs" />
+        <Compile Include = "VictoryCharts/CommonProps.fs" />
+        <Compile Include = "VictoryCharts/Padding.fs" />
+        <Compile Include = "VictoryCharts/Point.fs" />
+        <Compile Include = "VictoryCharts/Label.fs" />
+        <Compile Include = "VictoryCharts/Flyout.fs" />
+        <Compile Include = "VictoryCharts/Tooltip.fs" />
+        <Compile Include = "VictoryCharts/Axis.fs" />
+        <Compile Include = "VictoryCharts/PolarAxis.fs" />
+        <Compile Include = "VictoryCharts/Legend.fs" />
+        <Compile Include = "VictoryCharts/ChartContainer.fs" /> 
+        <Compile Include = "VictoryCharts/ClipContainer.fs" />
+        <Compile Include = "VictoryCharts/Bar.fs" />
+        <Compile Include = "VictoryCharts/AreaChart.fs" />
+        <Compile Include = "VictoryCharts/LineChart.fs" />
+        <Compile Include = "VictoryCharts/BarChart.fs" />
+        <Compile Include = "VictoryCharts/PieChart.fs" />
+        <Compile Include = "VictoryCharts/ScatterChart.fs" />  
+        <Compile Include = "VictoryCharts/Stack.fs" />      
+        <Compile Include = "VictoryCharts/VictoryCharts.fs" />
+  </ItemGroup>
+  <PropertyGroup>
+    <NpmDependencies>
+        <NpmPackage Name="victory" Version="gte 36.6.7 lt 37.0.0" ResolutionStrategy="Max" />
+    </NpmDependencies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="*.fsproj; *.fs; *.js;" Exclude="**\*.fs.js" PackagePath="fable\" />
+  </ItemGroup>
+  <Import Project="..\..\.paket\Paket.Restore.targets" />
+</Project>

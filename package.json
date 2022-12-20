@@ -10,11 +10,21 @@
         "test:live": "webpack-dev-server --mode development --env test"
     },
     "dependencies": {
+        "@inocan/rough-viz": "^1.2.0",
+        "@pdf-lib/fontkit": "^1.1.1",
         "downloadjs": "^1.4.7",
+        "pdf-lib": "^1.17.1",
         "react": "^17.0.2",
-        "react-dom": "^17.0.2"
+        "react-dom": "^17.0.2",
+        "victory": "^36.6.7"
     },
     "devDependencies": {
+        "@babel/core": "^7.19.1",
+        "@babel/plugin-transform-runtime": "^7.19.1",
+        "@babel/preset-env": "^7.19.1",
+        "@babel/preset-react": "^7.18.6",
+        "@babel/runtime": "^7.19.0",
+        "babel-loader": "^8.2.5",
         "copy-webpack-plugin": "^10.0.0",
         "css-loader": "^6.5.1",
         "file-loader": "^6.2.0",

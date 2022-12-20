@@ -3,8 +3,11 @@ Fable.Elmish
 Fable.Elmish.React
 Fable.Elmish.Debugger
 Fable.Elmish.HMR
+Fable.Fetch
 Fable.React
 Fable.Remoting.Client
+Fable.Promise
 Feliz
 Feliz.Bulma
+Feliz.UseElmish
 Fulma

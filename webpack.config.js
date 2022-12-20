@@ -23,7 +23,20 @@ const CONFIG = {
             target: 'http://localhost:' + (process.env.SERVER_PROXY_PORT || '8085'),
             ws: true
         }
-    }
+    },
+    // Use babel-preset-env to generate JS compatible with most-used browsers.
+    // More info at https://babeljs.io/docs/en/next/babel-preset-env.html
+    babel: {
+        presets: [
+            "@babel/preset-env",
+            "@babel/preset-react",
+        {
+            plugins: [ "@babel/plugin-transform-runtime"]
+        }
+      ],
+
+    },
+
 };
 
 const TEST_CONFIG = {
@@ -108,6 +121,15 @@ module.exports = function(env, arg) {
         // - file-loader: Moves files referenced in the code (fonts, images) into output folder
         module: {
             rules: [
+                {
+                    test: /\.(js|jsx)$/,
+                    exclude: /node_modules/,
+                    use: {
+                        loader: 'babel-loader',
+                        options: CONFIG.babel
+                    },
+                },
+                
                 {
                     test: /\.(sass|scss|css)$/,
                     use: [
